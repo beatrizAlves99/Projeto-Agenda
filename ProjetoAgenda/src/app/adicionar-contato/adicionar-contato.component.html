@@ -1,0 +1,20 @@
+<form method="POST" #formulario="ngForm" (ngSubmit)="atualizar ? atualizarContato(formulario) : criarContato(formulario)">
+  <div class="form-group">
+    <label>Nome</label>
+    <input type="text" class="form-control" name="nome" [(ngModel)]="contato.nome" required >
+  </div>
+  <div class="form-group">
+    <label>Email</label>
+    <input type="email" class="form-control" [(ngModel)]="contato.email" id="email" name="email"
+      placeholder="email@servidor.com" required email >
+  </div>
+  <div class="form-group">
+    <label>Telefone</label>
+    <input type="text"  
+    class="form-control cel-sp-mask" placeholder="Ex.: (00) 00000-0000" data-mask="00/00/0000" 
+    [(ngModel)]="contato.telefone" id="telefone" name="telefone"
+     >
+  </div>
+
+  <button type="submit" [disabled]="formulario.invalid" class="btn btn-primary">Salvar</button>
+</form>

@@ -1,0 +1,24 @@
+<div>
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th>Nome</th>
+        <th>Email</th>
+        <th>Telefone</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let c of contatos">
+        <td>{{c.nome}}</td>
+        <td>{{c.email}}</td>
+        <td>{{c.telefone}}</td>
+        <td>
+          <button type="button" [routerLink]="['/edit', c.id]" class="btn btn-success" (click)="atualizarContatto(c.id)" > Atualizar</button>
+          <button type="button" class="btn btn-danger"  (click)="deletarContato(c.id)" >Excluir</button>
+        </td>
+      </tr>
+    </tbody>
+
+  </table>
+</div>
