@@ -8,12 +8,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AgendaContatosComponent } from './agenda-contatos/agenda-contatos.component';
 import { AdicionarContatoComponent } from './adicionar-contato/adicionar-contato.component';
+import { InicioComponent } from './inicio/inicio.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AgendaContatosComponent,
-    AdicionarContatoComponent
+    AdicionarContatoComponent,
+    InicioComponent
   ],
   imports: [
     BrowserModule,
