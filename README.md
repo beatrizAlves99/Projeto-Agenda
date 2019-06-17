@@ -20,5 +20,12 @@ Para compilar a API, basta executar o arquivo main no pacote *br.gov.rn.parnamir
 
 __Front-End com Angular:__ Em primeiro lugar execute o comando `npm install` para fazer o download dos pacotes node que foram usados no projeto, em seguida você pode executar o comando `ng serve` para rodar o projeto. Atenção em abrir o terminal na pasta raiz da aplicação Angular antes de executar os comandos mencionados.
 
+__Rodando o projeto por completo:__ Para que o projeto esteja funcionando em plenas condições, primeiro deve-se subir o servidor postgresSQL no seu computador, em seguida a API REST e por fim a aplicação Angular.
+
+## URLs das aplicações: 
+
+__Angular:__   <http://localhost:4200>
+
+__API REST:__  <http://localhost:8080/contatos>
 
 
