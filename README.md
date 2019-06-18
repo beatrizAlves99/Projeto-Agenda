@@ -16,6 +16,8 @@ spring.jpa.database-platform=org.hibernate.dialect.PostgreSQL9Dialect
 
 ```
 
+Após rodar o projeto pela primeira vez, altere a propriedade *spring.jpa.hibernate.ddl-auto=* de `create` para `none`, assim o projeto não recria o banco toda vez que for executado.  
+
 Para compilar a API, basta executar o arquivo main no pacote *br.gov.rn.parnamirim.agendatelefone*.
 
 __Front-End com Angular:__ Em primeiro lugar execute o comando `npm install` para fazer o download dos pacotes node que foram usados no projeto, em seguida você pode executar o comando `ng serve` para rodar o projeto. Atenção em abrir o terminal na pasta raiz da aplicação Angular antes de executar os comandos mencionados.
