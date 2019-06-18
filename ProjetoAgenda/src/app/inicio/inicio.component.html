@@ -1,22 +1,13 @@
-<div class="row">
-    <div class="col-sm-6">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
+
+  <div id="card" class="card-columns">
+    <div class="card border-dark mb-3" style="max-width: 18rem;" *ngFor="let c of contatos">
+      <div class="card-header">Contato</div>
+      <div class="card-body text-dark">
+        <h5 class="card-title">{{c.nome}}</h5>
+        <p class="card-text">Telefone: {{c.telefone}}</p>
+        <p class="card-text">Email: {{c.email}}</p>
       </div>
     </div>
   </div>
-  <div class="row">
-      <div class="col-sm-6">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-    </div>
+
+
