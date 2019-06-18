@@ -5,7 +5,7 @@
 __Tecnologias usadas:__ 
 `Spring Boot`, `Angular 2`, `PostgreSQL`, `Bootstrap 4`.
 
-__API REST com Spring Boot:__ No arquivo *application.properties* modifique o nome de usuario e a senha para as suas configurações pessoais. O nome do banco deve ser Agenda.
+__API REST com Spring Boot:__ No arquivo *application.properties*(\src\main\resources) modifique o nome de usuario e a senha para as suas configurações pessoais. O nome do banco deve ser Agenda.
 ```
 spring.datasource.url=jdbc:postgresql://localhost:5432/Agenda 
 spring.datasource.username=user
